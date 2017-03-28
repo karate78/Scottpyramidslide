@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+    <h1 class="title">Pyramid Slide</h1>
+
+    <br>
+    <div class="pyramid-box">
+        <form class="brick-slider">
+            <label>Brick Symbol:</label>
+            <select name="brick" id="brick">
+                <option value="#">#</option>
+                <option value="$">$</option>
+                <option value="@">@</option>
+                <option value="X">X</option>
+            </select>
+
+            <label>How high?</label>
+            <input type="range" id="height" min="1" max="20"/>
+            <output id="sliderVal"></output>
+        </form>
+        <div class="pyramid-background">
+            <div id="pyramid" class="pyramid"></div>
+        </div>
+    </div>
+
+    <script src="scottpyramid.js"></script>
+</body>
+</html>
